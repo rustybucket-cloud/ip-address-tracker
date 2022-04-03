@@ -1,0 +1,63 @@
+@use "variables" as *;
+
+.search {
+    padding: 1.5rem;
+    min-height: 20rem;
+    padding-top: 1.5rem;
+    h1 { 
+        color: white; 
+        font-weight: 500;
+        font-size: 24px;
+        margin-bottom: 2rem;
+    }
+    input { 
+        width: 100%; 
+        padding: 1rem;
+        border-radius: 15px 0 0 15px;
+        border: none;
+        max-width: 30rem;
+
+        &:focus { outline:none; }
+    }
+    background-image: url("../images/pattern-bg.png");
+}
+.search-div { 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+.search-button {
+    padding: .6rem 1.5rem;
+    border-radius: 0 15px 15px 0;
+    font-size: 24px;
+    background-color: $very-dark-gray;
+    color: white;
+    border: none;
+
+    &:hover { background-color: $dark-gray;}
+}
+
+.ip-info {
+    background-color: white;
+    position: absolute;
+    inset: 11rem 1.5rem auto;
+    border-radius: 15px;
+    padding: 2rem;
+    font-size: 14px;
+    max-width: 60rem;
+    margin: auto;
+    z-index: 999;
+
+    display: grid;
+    justify-items: center;
+}
+.sub-title {
+    color: gray;
+    font-size: 14px;
+}
+.data {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#map { min-height: 30rem; }

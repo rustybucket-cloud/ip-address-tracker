@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+  <link rel="stylesheet" href="css/styles.css">  
+</head>
+<body>
+  <div class="search">
+    <h1>IP Address Tracker</h1>
+    <div class="search-div">
+      <input type="text" id="ip-search" placeholder="Search for any IP address or domain">
+      <button class="search-button">></button>
+    </div>
+    
+  </div>
+
+  <div class="ip-info">
+    <div class="ip-stat" id="ip-div">
+      <p class="sub-title">IP ADDRESS</p>
+      <p class="data" id="ip">192.212.174.101</p>
+    </div>
+    <div class="ip-stat" id="location-div">
+      <p class="sub-title">LOCATION</p>
+      <p class="data" id="location">Brooklyn, NY 10001</p>
+    </div>
+    <div class="ip-stat" id="timezone-div">
+      <p class="sub-title">TIMEZONE</p>
+      <p class="data" id="timezone">UTC - 05:00</p>
+    </div>
+    <div class="ip-stat" id="isp-div">
+      <p class="sub-title">ISP</p>
+      <p class="data" id="isp">SpaceX Starlink</p>
+    </div>
+  </div>
+  
+  <div id="map"></div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script/index.js"></script>
+</body>
+</html>

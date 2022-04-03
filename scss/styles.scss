@@ -1,0 +1,10 @@
+@use "reset";
+@use "variables" as *;
+@use "small";
+@use "large";
+
+body {
+    font-family: $font-family;
+    text-align: center;
+    background-color: black;
+}
